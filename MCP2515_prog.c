@@ -356,7 +356,12 @@ MCP_ERR_entypedef MCP_u8TxB1Config_Extended(
 }
 /*Tx Buffer 2*/
 MCP_ERR_entypedef MCP_u8TxB2Config_Extended(
-		MCP_ExDF_strtypedef Copy_strtypedef_Message, u8 Copy_u8BufferPriority);
+		MCP_ExDF_strtypedef Copy_strtypedef_Message, u8 Copy_u8BufferPriority){
+	MCP_ERR_entypedef Local_entdErrorState=No_ERR;
+
+
+	return Local_entdErrorState;
+}
 
 MCP_ERR_entypedef MCP_u8TxBnWrite_DATA(
 		MCP_StDF_strtypedef Copy_strtypedef_Message,
